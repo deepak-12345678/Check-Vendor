@@ -1,0 +1,192 @@
+* {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+}
+body {
+  background-image: linear-gradient(rgb(157, 255, 0), rgb(255, 0, 0));
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3%;
+}
+.box {
+  background-color: rgb(255, 255, 255);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1 {
+  background: linear-gradient(rgb(255, 123, 0), rgb(255, 0, 0));
+  background-size: cover;
+  text-align: center;
+  font-size: 40px;
+  padding: 2%;
+  color: white;
+  width: 100%;
+  margin: 0%;
+}
+input {
+  padding: 1%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 90%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.deliverydate {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.receiveddate {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.qualitydemanded {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.qualityreceived {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.qualityreturned {
+  margin-top: 5%;
+
+  margin-bottom: 5%;
+}
+p {
+  margin-left: 5%;
+}
+.clear {
+  width: 100%;
+  margin-top: 2%;
+}
+.set {
+  width: 100%;
+  margin-bottom: 15%;
+}
+.clean {
+  display: flex;
+  flex-direction: row;
+}
+.unk {
+  width: 90%;
+  padding: 1%;
+  border: 3px orangered solid;
+  background-color: orangered;
+  border-radius: 30px;
+  background: orangered;
+  cursor: pointer;
+  padding: 2%;
+  color: white;
+}
+.unk:hover {
+  background: none;
+  color: orangered;
+  transition: 0.5s;
+}
+.but {
+  border: 3px orangered solid;
+  background-color: orangered;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10%;
+  padding: 2%;
+  padding: 2%;
+}
+.but:hover {
+  background: none;
+  color: orangered;
+  transition: 0.5s;
+}
+#reset {
+  background: none;
+  border: none;
+  border: 3px orangered solid;
+  background-color: orangered;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  padding: 2%;
+}
+#reset:hover {
+  background: none;
+  color: orangered;
+  transition: 0.5s;
+}
+.wtf {
+  font-size: 10px;
+}
+h2 {
+  margin-left: 2%;
+}
+.hide {
+  background: none;
+  font-size: 18px;
+  border: none;
+  color: black;
+  width: 25%;
+  cursor: pointer;
+  background-color: azure;
+  border: 2px solid black;
+  margin-bottom: 3%;
+  margin-left: 2%;
+}
+.hi {
+  padding-bottom: 10%;
+}
+.hide {
+  width: 90%;
+  background-color: aqua;
+}
+h2 {
+  background-color: aqua;
+}
+i {
+  background: none;
+}
+.deco:hover {
+  color: orangered;
+}
+
+@media only screen and (min-width: 800px) {
+  .first {
+    display: flex;
+  }
+  .deliverydate {
+    width: 50%;
+  }
+  .receiveddate {
+    width: 50%;
+  }
+  .second {
+    display: flex;
+  }
+  .qualitydemanded {
+    width: 50%;
+  }
+  .qualityreceived {
+    width: 50%;
+  }
+  .third {
+    display: flex;
+  }
+  .qualityreturned {
+    width: 50%;
+  }
+  .button {
+    width: 50%;
+  }
+  .but {
+    width: 90%;
+  }
+  .hide {
+    width: 30%;
+  }
+}
