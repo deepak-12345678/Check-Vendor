@@ -4,94 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vendor Check</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cscss.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Prompt&family=Quicksand:wght@300&family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/f8c1fa29ab.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app2.js" defer></script>
-    <link rel="shortcut icon" type="image/x-icon" href="6706688_preview.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="favi.png" />
   </head>
-  <body>
-    <div class="box">
-      <header>
-        <h1>Check Vendor Performance</h1>
-      </header>
+
+  <body class="registeration">
+    <header>
+      <h1><b>Academic Registeration Portal</b></h1>
+    </header>
+    <div class="fill">
       <form
-        action=""
+        action="success.html"
+        onsubmit="return validateForm()"
         method="post"
         name="myForm"
-        onsubmit="submitDetails(event)"
       >
-        <div class="data">
-          <div class="first">
-            <div class="deliverydate">
-              <p class="a">Expected Delivery Date</p>
-              <input type="date" class="aa" required />
-            </div>
-            <div class="receiveddate">
-              <p class="b">Received Date</p>
-              <input type="date" class="bb" required />
-            </div>
+        <div class="fh"><b>Registeration Form</b></div>
+        <div class="formelement">
+          <div class="fname">
+            <label for="name"><b>Name:</b><br /></label>
+            <input
+              class="name"
+              type="text"
+              placeholder="enter your full name"
+              autocomplete="off"
+              name="d"
+              required
+            />
+            <b><p class="formerror" id="fname"></p></b>
           </div>
-          <div class="second">
-            <div class="qualitydemanded">
-              <p class="c">Quantity Demanded</p>
-              <input
-                type="number"
-                placeholder="Quality Demanded"
-                class="cc"
-                required
-              />
+          <div class="contain">
+            <div class="gender">
+              <label for="gender"><b>Gender:</b></label>
             </div>
-            <div class="qualityreceived">
-              <p class="d">Quantity Received</p>
-              <input
-                type="number"
-                placeholder="Quality Received"
-                class="dd"
-                required
-              />
-            </div>
-          </div>
-          <div class="third">
-            <div class="qualityreturned">
-              <p class="e">Quantity Returned</p>
-              <input
-                type="number"
-                placeholder="Quality Returned"
-                class="ee"
-                required
-              />
-            </div>
-            <div class="button">
-              <input type="submit" name="sub" class="but" value="Submit" />
-              <div class="clean">
-                <div class="set">
-                  <input type="reset" name="set" id="reset" value="Reset" />
-                </div>
-                <div class="clear">
-                  <button class="unk" onclick="clearAll">Clear</button>
-                </div>
+            <div class="option">
+              <div class="lad">
+                <input class="male" type="radio" name="gender" />
+                <label for="male">Male</label>
+              </div>
+              <div class="mad">
+                <input class="female" type="radio" name="gender" />
+                <label for="female">Female</label>
+              </div>
+              <div class="cad">
+                <input class="others" type="radio" name="gender" />
+                <label for="others">Others</label>
               </div>
             </div>
           </div>
+          <div class="phnumber">
+            <label for="number"><b>Phone Number</b><br /></label>
+            <input
+              class="number"
+              type="number"
+              placeholder="enter the mobile number"
+              autocomplete="off"
+              name="e"
+              required
+            />
+            <b><p class="formerror" id="fnumber"></p></b>
+          </div>
+          <div class="emailID">
+            <label for="emailID"><b>Email ID</b><br /></label>
+            <input
+              class="email"
+              type="email"
+              pattern="f[0-9]{8}@pilani.bits-pilani.ac.in"
+              title="please enter only bits(pilani campus)-emailID"
+              placeholder="enter your BITS email ID"
+              autocomplete="off"
+              name="p"
+              required
+            />
+            <p class="formerror" id="femail"></p>
+          </div>
+          <div class="sID">
+            <label for="studentID"><b>Student ID</b><br /></label>
+            <input
+              class="studentID"
+              type="text"
+              placeholder="2021YYPSXXXXP"
+              autocomplete="off"
+              pattern="[0-9]{4}[A-Za-z][0-9][A-Za-z]{2}[0-9]{4}[a-zA-Z]"
+              title="Please enter in the pattern as provided in placeholder"
+              name="a"
+              required
+            />
+            <p class="formerror" id="studID"></p>
+          </div>
+          <div class="pwd">
+            <label for="pass"><b>Password:</b><br /></label>
+            <input
+              type="password"
+              placeholder="enter the password"
+              autocomplete="off"
+              class="pass"
+              name="k"
+              required
+            />
+            <b><p class="formerror" id="passw"></p></b>
+          </div>
+          <div class="sub">
+            <input type="submit" />
+            <input type="reset" onclick="clearErrors" />
+          </div>
+          <h3>
+            Visit my Vendor Website
+            <a href="vendor.html"> Check here</a>
+          </h3>
         </div>
       </form>
-
-      <br />
-      <br />
-
-      <div class="data">
-        <div id="hi"></div>
-      </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

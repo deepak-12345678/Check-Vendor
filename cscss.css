@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.contain {
+  display: flex;
+}
+html {
+  background-image: linear-gradient(
+    rgb(25, 183, 197, 0.9),
+    rgb(98, 233, 86, 0.8)
+  );
+  background-attachment: fixed;
+  background-size: cover;
+}
+header {
+  text-align: center;
+}
+form {
+  width: 80%;
+  height: 200%;
+  padding: 5%;
+  margin-bottom: 10%;
+  align-items: center;
+  transform: translate(12.5%, 0%);
+  padding-bottom: 13%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formelement {
+  padding: 5%;
+  background-color: white;
+  width: 109.7%;
+  margin-left: -4.85%;
+  margin-right: -4.85%;
+  margin-bottom: -4.85%;
+}
+
+input {
+  padding: 1%;
+  margin: 2%;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+}
+h1 {
+  margin-top: 3%;
+  font-family: "Anton", sans-serif;
+  text-decoration: underline blue;
+}
+label {
+  font-size: 22px;
+  margin-left: 2%;
+  font-family: "Raleway", sans-serif;
+}
+.fh {
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(117, 6, 221), rgb(21, 197, 241));
+  padding: 3%;
+  font-size: 30px;
+  width: 110%;
+  font-family: "Anton", sans-serif;
+  color: white;
+}
+.fill {
+  display: flex;
+  flex-direction: row;
+}
+.cad,
+.mad,
+.lad {
+  display: flex;
+  align-items: center;
+}
+.female {
+  width: 20px;
+}
+.male {
+  width: 20px;
+}
+.others {
+  width: 20px;
+}
+.gender {
+  margin-left: 2%;
+}
+.sub input {
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(90deg, rgb(117, 6, 221), rgb(21, 197, 241));
+}
+.sub input:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgb(117, 6, 221, 0.3),
+    rgb(21, 197, 241, 0.3)
+  );
+  font-size: 120%;
+  color: black;
+  transition: 0.7s;
+}
+.sub {
+  display: flex;
+  flex-direction: row;
+}
+.mad {
+  margin-bottom: 30%;
+}
+.lad {
+  margin-bottom: 30%;
+}
+.cad {
+  margin-bottom: 30%;
+}
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0;
+}
+.border {
+  border: 3px solid red;
+}
+p {
+  color: red;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-size: 16px;
+  font-weight: 800;
+}
+@media only screen and (max-width: 750px) {
+  .sub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  b {
+    font-size: 16px;
+  }
+  h1 b {
+    font-size: 22px;
+  }
+}

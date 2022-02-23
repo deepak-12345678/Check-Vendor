@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendor Check</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Prompt&family=Quicksand:wght@300&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f8c1fa29ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app2.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="6706688_preview.png" />
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <h1>Check Vendor Performance</h1>
+      </header>
+      <form
+        action=""
+        method="post"
+        name="myForm"
+        onsubmit="submitDetails(event)"
+      >
+        <div class="data">
+          <div class="first">
+            <div class="deliverydate">
+              <p class="a">Expected Delivery Date</p>
+              <input type="date" class="aa" required />
+            </div>
+            <div class="receiveddate">
+              <p class="b">Received Date</p>
+              <input type="date" class="bb" required />
+            </div>
+          </div>
+          <div class="second">
+            <div class="qualitydemanded">
+              <p class="c">Quantity Demanded</p>
+              <input
+                type="number"
+                placeholder="Quality Demanded"
+                class="cc"
+                required
+              />
+            </div>
+            <div class="qualityreceived">
+              <p class="d">Quantity Received</p>
+              <input
+                type="number"
+                placeholder="Quality Received"
+                class="dd"
+                required
+              />
+            </div>
+          </div>
+          <div class="third">
+            <div class="qualityreturned">
+              <p class="e">Quantity Returned</p>
+              <input
+                type="number"
+                placeholder="Quality Returned"
+                class="ee"
+                required
+              />
+            </div>
+            <div class="button">
+              <input type="submit" name="sub" class="but" value="Submit" />
+              <div class="clean">
+                <div class="set">
+                  <input type="reset" name="set" id="reset" value="Reset" />
+                </div>
+                <div class="clear">
+                  <button class="unk" onclick="clearAll">Clear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <br />
+      <br />
+
+      <div class="data">
+        <div id="hi"></div>
+      </div>
+    </div>
+  </body>
+</html>
